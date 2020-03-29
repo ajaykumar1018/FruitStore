@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<link
+	href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+	rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Amatic SC'
+	rel='stylesheet'>
+<script src="/js/sty.js"></script>
+</head>
+<body class="bg-l">
+	<nav class="navbar navbar-fixed-top">
+
+		<!-- <nav class="navbar navbar-default"> -->
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Organic Me</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="nav-item active"><a href="/index">Home</a></li>
+				<li class="nav-item"><a href="#">About</a></li>
+				<li class="nav-item"><a href="#contact">Contact</a></li>
+				<li class="nav-item dropdown"><a href="#"
+					class="dropdown-toggle" data-toggle="dropdown" role="button"
+					aria-haspopup="true" aria-expanded="false">Dropdown <span
+						class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li role="separator" class="divider"></li>
+						<li class="dropdown-header">Nav header</li>
+						<li><a href="#">Separated link</a></li>
+					</ul></li>
+			</ul>
+
+		</div>
+	</nav>
+	<div>
+		<div class="row text-center" style="margin-top: 100px;">
+			<p style="font-size: 30px;">Login</p>
+			<hr />
+		</div>
+		<div class="row" style="margin-top: 100px;">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li style="padding-right: 80px; font-size: 18px; font-weight: 400;"><a
+						href="#tab-1" data-toggle="tab"><span> Create new
+								account</span></a></li>
+					<li
+						style="padding-left: 40px; padding-right: 40px; font-size: 18px; font-weight: 400;"><a
+						href="#tab-2" data-toggle="tab"><span> Login</span></a></li>
+					<li style="padding-left: 80px; font-size: 18px; font-weight: 400;"><a
+						href="#tab-3" data-toggle="tab"><span> Forget Password</span></a></li>
+				</ul>
+
+				<!-- Tab panels -->
+				<div class="tab-content">
+
+					<!-- create new user pane -->
+					<div class="tab-pane fade" id="tab-1">
+						<div class="panel-group" style="margin-top:20px;">
+							<div class="panel panel-default panel-transparent"
+								style="border: none; background: rgba(46, 51, 56, 0.2) !important;">
+								<div class="panel-body">
+									<form>
+										<div class="form-group">
+											<label for="newUsername">Username: </label> <input
+												required="required" type="text" class="form-control"
+												id="newUsername" name="username"/>
+											<!-- <p style="color: #828282">Enter your username here.</p> -->
+										</div>
+
+										<div class="form-group">
+											<label for="email">Email Address: </label> <input
+												required="required" type="email" class="form-control"
+												id="email" name="email" />
+											<!-- <p style="color: #828282">A valid email address. All
+											emails from the system withll be sent to this address. The
+											email address is not made public and will only be used if you
+											wish to receive a new password or wish to receive certain
+											notification.</p> -->
+										</div>
+
+										<button type="submit" class="btn">Create new account</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- log in -->
+					<div class="tab-pane fade" id="tab-2">
+						<div class="panel-group" style="margin-top:20px;">
+							<div class="panel panel-default panel-transparent"
+								style="border: none; background: rgba(46, 51, 56, 0.2) !important;">
+								<div class="panel-body">
+									<form>
+										<div class="form-group">
+											<label for="newUsername">Username: </label> <input
+												required="required" type="text" class="form-control"
+												id="newUsername" name="username" />
+											<!-- <p style="color: #828282">Enter your username here.</p> -->
+										</div>
+
+										<div class="form-group">
+											<label for="password">Password: </label> <input
+												required="required" type="password" class="form-control"
+												id="password" name="password" />
+											<!-- <p style="color: #828282">Enter the password that
+											accompanies your username</p> -->
+										</div>
+
+										<button type="submit" class="btn">Log in</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- forget password -->
+					<div class="tab-pane fade" id="tab-3">
+						<div class="panel-group" style="margin-top:20px;">
+							<div class="panel panel-default panel-transparent"
+								style="border: none; background: rgba(46, 51, 56, 0.2) !important;">
+								<div class="panel-body">
+									<form>
+										<div class="form-group">
+											<label for="recoverEmail">Your Email: </label> <input
+												required="required" type="text" class="form-control"
+												id="recoverEmail" name="email"/>
+											<!-- <p style="color: #828282">Enter your registered email
+											address here.</p> -->
+										</div>
+
+										<button type="submit" class="btn">Submit</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+
+
+		<p>
+			<br> <br> <br> <br> <br> <br> <br>
+			<br> <br> <br> <br>
+		</p>
+
+	</div>
+	<div class="row" id="footer">
+		<div class="col-md-6">
+			<h4 id="orga">ORGANIC ME</h4>
+		</div>
+		<div class="col-md-6">
+			<h5 id="contact">Contact Us</h5>
+			<ul>
+				<li><img src="/images/map-svg.svg/"
+					style="height: 17px; width: 17px;"> <span style="font-size:15px;">101/3-907
+						Asdfg, Qwerty Street, Zxcvb</span></li>
+				<li><img src="/images/phone-svg.svg/"
+					style="height: 15px; width: 14px;"> <span style="font-size:15px;">+91
+						11111 00001</span></li>
+				<li><img src="/images/mail-svg.svg/"
+					style="height: 15px; width: 15px;"> <span style="font-size:15px;">meme@meme.meme</span></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(
+				function() {
+					$(window).scroll(
+							function() {
+								var scroll = $(window).scrollTop();
+								if (scroll > 50) {
+									$(".navbar.navbar-fixed-top").css(
+											"background", "#ffffff");
+									$(".navbar.navbar-fixed-top")
+											.css("box-shadow",
+													"0 8px 6px -6px #999");
+								}
+							})
+				})
+	</script>
+	<!-- <script>$.getscript("/js/sty.js",function(){
+		scrolled();
+	});</script> -->
+</body>
+</html>
