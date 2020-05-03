@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1000/xhtml">
+<head th:replace="common/header :: common-header" />
+<body>
+
+	<div th:replace="common/header :: navbar"></div>
+	<div class="container">
+		<div class="row" style="margin-top: 100px;">
+			<div class="col-md-9">
+				<table id="productList">
+					<thead>
+						<tr>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="product-item" data-th-each="product: ${productList}">
+							<td>
+								<div th:if="${product != null}">
+									<div class="row">
+										<div class="col-md-3">
+											<a th:href="@{/productDetail?id=}+${product.id}">
+											<img class="img-responsive" th:src="#{adminPath}+@{/images/product/}+${product.id}+'.png'" />
+											</a>
+										</div>
+										<div class="col-md-9">
+											<a th:href="@{/productDetail?id=}+${product.id}">
+											<h4 th:text="${product.productName}"></h4>
+											</a>
+											<a th:href="@{/productDetail?id=}+${product.id}">
+											<span th:text="${product.ourPrice}"></span> <span
+												style="text-decoration: line-through;"
+												th:text="${product.listPrice}"></span>
+												</a>
+											<p th:text="${product.description}"></p>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+	</div>
+
+	<div th:replace="common/header :: footer"></div>
+	<div th:replace="common/header :: body-bottom-scripts"></div>
+</body>
+</html>
